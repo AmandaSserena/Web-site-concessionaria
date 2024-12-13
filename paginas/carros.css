@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E9E3E6;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.3rem;
+    background-color: #333;
+    color: white;
+    position: relative; 
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .logo img {
+    position: absolute;
+    width: 150px;
+    margin-right: 10px;
+}
+
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+header button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; 
+}
+
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.car-card h2 {
+    margin: 0.5rem 0;
+}
+
+.car-card p {
+    margin: 0.5rem 0;
+}
+
+.car-card button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.car-card button:hover {
+    background-color: #555;
+}
+
+.car-card button:active {
+    transform: scale(0.95);
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #ffffff;
+}
+
+
+.dark-mode header nav a {
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode header button {
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode .car-card {
+    background-color: #000000;
+    color: white;
+}
+
+.dark-mode header .logo img{
+    filter: invert(1);
+}
+
+.dark-mode .car-card {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .car-card button {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode .car-card button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode .car-card button:active {
+    transform: scale(0.95);
+}
+
+.dark-mode .car-card img {
+    border-radius: 10px;
+}
+
+.dark-mode .car-card:hover {
+    transform: translateY(-10px);
+}
+
+.dark-mode .car-card {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode footer{
+    background-color: #fff;
+    color: black;
+}
+
+/*@media para 480px */
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.3rem;
+        
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+   
+
+
+   
+    .car-card {
+        width: 100%;
+    }
+}
+
+/* @media para 768px */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        margin-bottom: 1rem;
+    }
+
+    header nav {
+        margin-top: 1rem;
+    }
+
+    header nav a {
+        margin: 0 0.5rem;
+    }
+
+    .car-card {
+        width: 100%;
+    }
+}
+
+/* @media para 1024px */
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        margin-bottom: 1rem;
+    }
+
+    header nav {
+        margin-top: 1rem;
+    }
+
+    header nav a {
+        margin: 0 0.5rem;
+    }
+
+    .car-card {
+        width: 100%;
+    }
+}

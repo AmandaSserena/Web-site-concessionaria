@@ -1,0 +1,197 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E9E3E6;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.3rem;
+    background-color: #333;
+    color: white;
+    position: relative; 
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .logo img{
+    position: absolute;
+    width: 150px;
+    margin-right: 10px;
+}
+
+header nav a{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+header button{
+    background:none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+section.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Para ocupar a altura total da viewport */
+   
+}
+
+section.sobre img {
+    width: auto; /* Preserva a proporção */
+    height: 100%; /* Ocupa toda a altura disponível */
+    object-fit: cover; /* Ajusta sem distorcer */
+}
+
+section .conteudo-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 7rem;
+}
+
+.conteudo-sobre button{
+    
+    margin-left: 12.7rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-left: 7rem;
+    font-family: 'Montserrat', sans-serif; 
+}     
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 7rem;
+}
+ 
+
+
+section .conteudo-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 7rem;
+}
+
+.conteudo button{
+    
+    margin-left: 12.7rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.conteudo-sobre button{
+    
+    margin-left: 7rem;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.conteudo-sobre button:hover{
+    background-color: #555;
+}
+
+section.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Para ocupar a altura total da viewport */
+   
+}
+
+section.home img {
+    width: auto; /* Preserva a proporção */
+    height: 100%; /* Ocupa toda a altura disponível */
+    object-fit: cover; /* Ajusta sem distorcer */
+}
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: #333;
+    color: white;
+}
+footer p{
+    font-size: 1rem;
+}
+
+.dark-mode{
+    background-color: #000;
+    color: white;
+}
+
+.dark-mode header{
+    background-color: #fff;
+    color: black;
+}
+
+.dark-mode header .logo img{
+    filter: invert(1);
+}
+
+.dark-mode header nav a{
+    color: black;
+}
+
+.dark-mode footer{
+    background-color: #fff;
+    color: black;
+}
+
+.dark-mode section{
+    background-color: #000;
+    color: white;
+}
+
+.dark-mode .conteudo-sobre button{
+    background-color: #fff;
+    color: black;
+}

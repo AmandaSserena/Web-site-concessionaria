@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E9E3E6;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.3rem;
+    background-color: #333;
+    color: white;
+    position: relative; 
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .logo img {
+    position: absolute;
+    width: 150px;
+    margin-right: 10px;
+}
+
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+header button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem; /* Ajustado para maior destaque */
+    margin: 2rem 0; /* Espaçamento superior e inferior */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.conteudo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem; 
+    text-align: center;
+    margin: 1rem auto; 
+    max-width: 600px; /* Limita a largura para melhorar leitura */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #000000;
+}
+
+section .conteudo {
+    padding: 150px;
+}
+.conteudo button {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.conteudo button {
+   margin-left: 5.5rem; /* Ajustado para centralizar */    
+}
+.conteudo button:hover {
+    background-color: #555;
+}
+
+section.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Esconde o que ultrapassa os limites */
+    height: 100vh; /* Para ocupar a altura total da viewport */
+}
+
+section.home img {
+    width: auto; /* Preserva a proporção */
+    height: 100%; /* Ocupa toda a altura disponível */
+    object-fit: cover; /* Ajusta sem distorcer */
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #333;
+}
+
+footer p {
+    font-size: 1rem;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #fff;
+    color: black;
+}
+
+.dark-mode header .logo img {
+    filter: invert(1);
+}
+.dark-mode .conteudo h1{
+    color: white;
+}
+
+.dark-mode .conteudo p{
+    color: white;
+}
+
+.dark-mode header nav a {
+    color: black;
+}
+
+.dark-mode footer {
+    background-color: #ffffff;
+}
+
+.dark-mode footer p {
+    color: black;
+}
+
+.dark-mode section {
+    background-color: #000;
+    color: white;
+}
+
+.dark-mode .conteudo button {
+    background-color: #fff;
+    color: black;
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.3rem;
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    header nav a {
+        margin: 0 0.1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-left: 6rem;
+    }
+
+    .conteudo p {
+        font-size: 0.9rem;
+        margin-left: 6rem;
+    }
+
+    section .conteudo {
+        padding: 30px;
+    }
+
+    .conteudo button {
+        margin: 0 auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    header .logo img {
+        width: 100px;
+    }
+
+    header nav a {
+        margin: 0 0.5rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .conteudo p {
+        font-size: 1rem;
+    }
+
+    section .conteudo {
+        padding: 50px;
+    }
+
+    .conteudo button {
+        margin-left: 0;
+    }
+} 
+
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    header .logo img {
+        width: 120px;
+    }
+
+    header nav a {
+        margin: 0 0.7rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .conteudo p {
+        font-size: 1.1rem;
+    }
+
+    section .conteudo {
+        padding: 100px;
+    }
+
+    .conteudo button {
+        margin-left: 5rem;
+    }
+}
